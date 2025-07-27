@@ -1,0 +1,117 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ddd;
+    }
+
+    .aulas-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 3rem;
+    }
+
+    .aula {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1.5rem;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      backdrop-filter: blur(6px);
+    }
+
+    .aula:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .aula img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .aula-content {
+      padding: 1.5rem;
+    }
+
+    .aula-content h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: #e38e26;
+    }
+
+    .aula-content p {
+      font-size: 1rem;
+      color: #ccc;
+    }
+
+    .aula-content a {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: linear-gradient(to right, #00f7ff, #00c9a7);
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 1rem;
+      transition: background 0.3s;
+    }
+
+    .aula-content a:hover {
+      background: linear-gradient(to right, #00c9a7, #00f7ff);
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.2);
+      color: #bbb;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem 3rem;
+    }
+
+    .title-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: #e38e26;
+    }
+
+    .apr {
+      width: 8rem;
+      height: auto;
+      overflow: hidden;
+      border-radius: 4rem;
+    }
